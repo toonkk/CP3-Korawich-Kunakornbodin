@@ -3,7 +3,7 @@ gb = 72
 ics = 56
 cp = 69.7
 
-print("Foundation English", ":", fe)
-print("General Business", ":", gb)
-print("Introduction to Compoter System", ":", ics)
-print("Computer Programming", ":", cp)
+print("Foundation English :", fe)
+print("General Business :", gb)
+print("Introduction to Compoter System :", ics)
+print("Computer Programming :", cp)

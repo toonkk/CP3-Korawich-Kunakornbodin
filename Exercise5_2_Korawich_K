@@ -1,0 +1,4 @@
+s = int(input("The distance is : ",))
+t = int(input("The time is : ",))
+v = s/t
+print("The speed is : ", v)

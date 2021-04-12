@@ -20,6 +20,9 @@ if usernameInput == "jaeger" and passwordInput == "qwerty" :
     elif userSelected == 4:
         a = int(input("Vans pro skate : Amount :", ))
         print("Total price", a*2600 , "THB")
+    else:
+        print("You choose wrong products")
+        print("Please try again")
 else:
     print("Wrong Username or password")
     print("Please try again")

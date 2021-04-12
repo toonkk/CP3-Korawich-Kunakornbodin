@@ -7,6 +7,7 @@ if usernameInput == "jaeger" and passwordInput == "qwerty" :
     print("2. Adidas Ultraboost     : 5400 THB")
     print("3. Palladium             : 1590 THB")
     print("4. Vans pro skate        : 2600 THB")
+    print("----------------------------")
     userSelected = int(input("My purchase :",))
     if userSelected == 1:
         a = int(input("Converse Jack Purcell : Amount :", ))

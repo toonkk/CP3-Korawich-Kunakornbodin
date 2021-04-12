@@ -1,0 +1,25 @@
+usernameInput = input("Username : ",)
+passwordInput = input("Password : ",)
+if usernameInput == "jaeger" and passwordInput == "qwerty" :
+    print("You are logged in")
+    print("-----YORK Sneaker Store-----")
+    print("1. Converse Jack Purcell : 2490 THB")
+    print("2. Adidas Ultraboost     : 5400 THB")
+    print("3. Palladium             : 1590 THB")
+    print("4. Vans pro skate        : 2600 THB")
+    userSelected = int(input("My purchase :",))
+    if userSelected == 1:
+        a = int(input("Converse Jack Purcell : Amount :", ))
+        print("Total price", a*2490 , "THB")
+    elif userSelected == 2:
+        a = int(input("Adidas Ultraboost : Amount :", ))
+        print("Total price", a*5400 , "THB")
+    elif userSelected == 3:
+        a = int(input("Palladium : Amount :", ))
+        print("Total price", a*1590 , "THB")
+    elif userSelected == 4:
+        a = int(input("Vans pro skate : Amount :", ))
+        print("Total price", a*2600 , "THB")
+else:
+    print("Wrong Username or password")
+    print("Please try again")

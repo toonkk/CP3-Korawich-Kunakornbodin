@@ -1,0 +1,12 @@
+def addNumber(x,y):
+    print(x+y)
+def minusNumber(x,y):
+    print(x-y)
+def multiplyNumber(x,y):
+    print(x*y)
+def divideNumber(x,y):
+    print(x/y)
+addNumber(500,50)
+minusNumber(500,50)
+multiplyNumber(500,50)
+divideNumber(500,50)

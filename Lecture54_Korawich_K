@@ -1,0 +1,41 @@
+def login():
+    usernameInput = input("Username : ", )
+    passwordInput = input("Password : ", )
+    if usernameInput == "admin" and passwordInput == "qwerty":
+        print("You are logged in")
+        return showMenu()
+    else:
+        print("Wrong username or password")
+        return login()
+
+def showMenu():
+    print("------KKD shop------")
+    print("1. VAT calculator")
+    print("2. Price calculator")
+    return menuSelect()
+
+def menuSelect():
+    userSelected = int(input("Choose your function :", ))
+    if userSelected == 1:
+        print("--Vat Calculator--")
+        priceVatCal = int(input("Price for vat calculate :"))
+        return vatCalculate(priceVatCal)
+    elif userSelected == 2:
+        return priceCalculate()
+    else:
+        print("Please choose your program again")
+        return menuSelect()
+
+def vatCalculate(price):
+    print("--Vat Calculator--")
+    vat = 7
+    result = price + price * vat / 100
+    return result
+
+def priceCalculate():
+    print("--Price Calculator--")
+    price1 = int(input("item 1 price :", ))
+    price2 = int(input("item 2 price :", ))
+    return vatCalculate(price1 + price2)
+
+print(login())
